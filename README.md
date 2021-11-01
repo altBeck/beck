@@ -1,2 +1,2 @@
-# beck.github.io
+# beck
 My Portfolio Website
