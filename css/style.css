@@ -1,0 +1,424 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;700;900&display=swap");
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Epilogue', sans-serif;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #000002), to(#2e1493));
+  background: linear-gradient(#000002 10%, #2e1493);
+  color: #f4f4f4;
+  overflow-x: hidden !important;
+}
+
+.hero .container {
+  display: block;
+}
+
+.hero .container .avatar {
+  margin-top: 4em;
+  margin-bottom: 2em;
+}
+
+@media (max-width: 40em) {
+  .hero .container .avatar {
+    text-align: center;
+    margin-top: 6em;
+    margin-bottom: 0;
+  }
+}
+
+.hero .container .tag {
+  position: absolute;
+  top: 1em;
+  left: 50em;
+}
+
+.hero .container .tag h3 {
+  line-height: .5;
+}
+
+@media (max-width: 40em) {
+  .hero .container .tag {
+    display: none;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .hero .container .tag {
+    display: none;
+  }
+}
+
+.hero .cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (min-width: 60em) {
+  .hero .cta .cta-links {
+    padding-left: 4.2em;
+    font-size: 1.2em;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .hero .cta .cta-links {
+    font-size: 1.125rem;
+    padding-left: 3.2em;
+    word-spacing: .5em;
+  }
+}
+
+.hero .cta a {
+  text-decoration: none;
+  color: #808080;
+  line-height: 3;
+  font-weight: 100;
+  padding-left: .65em;
+}
+
+.hero .cta a:hover {
+  color: #c0c0c0;
+}
+
+@media (max-width: 40em) {
+  .hero .cta {
+    padding-top: 3em;
+    text-align: center;
+    margin: 15px;
+  }
+}
+
+.hero .cta h2 {
+  margin: 0;
+  padding-left: 2em;
+  line-height: 1.3;
+  font-size: 2.875rem;
+  font-weight: 900;
+  max-width: 50rem;
+}
+
+@media (max-width: 40em) {
+  .hero .cta h2 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 0;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .hero .cta h2 {
+    max-width: 20em;
+    font-size: 2.5em;
+    padding: 0 1.7em;
+  }
+}
+
+.hero .anime {
+  display: block;
+  height: 400px;
+  width: 400px;
+  padding-left: 5rem;
+  margin-top: -10.5em;
+  -webkit-animation-name: anime;
+          animation-name: anime;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes anime {
+  from {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+  }
+  65% {
+    -webkit-transform: translate(0, 15px);
+            transform: translate(0, 15px);
+  }
+  to {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+  }
+}
+
+@keyframes anime {
+  from {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+  }
+  65% {
+    -webkit-transform: translate(0, 15px);
+            transform: translate(0, 15px);
+  }
+  to {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+  }
+}
+
+@media screen and (max-width: 40em) {
+  .hero .anime {
+    display: none;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .hero .anime {
+    display: none;
+  }
+}
+
+.sub-title {
+  margin-top: 20em;
+  margin-left: 5.76em;
+  margin-bottom: 3em;
+}
+
+.sub-title h1 {
+  line-height: .1;
+}
+
+.sub-title hr {
+  width: 4em;
+  border: solid red;
+  margin: 0;
+}
+
+@media (max-width: 40em) {
+  .sub-title {
+    font-size: .65rem;
+    margin-left: 2.5em;
+  }
+}
+
+.portfolio header {
+  width: 80%;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.portfolio .container {
+  width: 86.3%;
+  max-width: 1240px;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  grid-gap: 20px;
+}
+
+@media (min-width: 60em) {
+  .portfolio .container {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+.portfolio .card {
+  background: white;
+  text-decoration: none;
+  color: #444;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100%;
+  position: relative;
+  top: 0;
+  -webkit-transition: all .1s ease-in;
+  transition: all .1s ease-in;
+}
+
+.portfolio .card:hover {
+  top: -2px;
+  -webkit-box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio .card article {
+  padding: 20px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.portfolio .card h1 {
+  font-size: 20px;
+  margin: 0;
+  color: #333;
+}
+
+.portfolio .card p {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  line-height: 1.4;
+}
+
+.portfolio .card span {
+  font-size: 12px;
+  font-weight: bold;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  margin: 2em 0 0 0;
+}
+
+.portfolio .card .thumb {
+  padding-bottom: 60%;
+  background-size: cover;
+  background-position: center center;
+}
+
+.cta-2 {
+  max-width: 8em;
+  font-size: 2.3em;
+  margin-left: 0.6em;
+  line-height: 1.15;
+}
+
+.cta-2 a {
+  color: white;
+  text-decoration: none;
+}
+
+@media (min-width: 40em) {
+  .cta-2 {
+    margin-left: .55em;
+    font-size: 5em;
+  }
+}
+
+@media (min-width: 60em) {
+  .cta-2 {
+    margin-left: 1.08em;
+    font-size: 5em;
+  }
+}
+
+.cta-2 .e-txt {
+  display: inline-block;
+  position: relative;
+}
+
+.cta-2 .e-txt:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  height: 12px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+}
+
+.cta-2 .e-txt:hover:after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 2.4em;
+}
+
+.socials img {
+  height: 57.5px;
+  width: 60px;
+  margin: 0 1em;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .socials img {
+    margin-left: 2.5em;
+  }
+}
+
+@media (min-width: 60em) {
+  .socials img {
+    height: 78.48px;
+    width: 80.46px;
+    margin-left: 3.2em;
+    margin-top: -3em;
+  }
+}
+
+.socials a {
+  text-decoration: none;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .socials {
+    padding-left: 0 2em;
+  }
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+h {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 1;
+}
+/*# sourceMappingURL=style.css.map */

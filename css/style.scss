@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;700;900&display=swap');
+
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+}
+
+*, 
+*:before, 
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Epilogue', sans-serif;
+  background: linear-gradient(#000002 10%, #2e1493);
+  color: #f4f4f4;
+  overflow-x: hidden !important;
+}
+
+.hero {
+  .container {
+    display: block;
+
+    .avatar {
+      margin-top: 4em;
+      margin-bottom: 2em;
+
+      @media (max-width: 40em) {
+        text-align: center;
+        margin-top: 6em;
+        margin-bottom: 0;
+      }
+    }
+
+    .tag {
+      position: absolute;
+      top: 1em;
+      left: 50em;
+
+      h3 {
+        line-height: .5;
+      }
+
+      @media (max-width: 40em) {
+        display: none;
+      }
+
+      @media only screen 
+        and (min-device-width: 768px) 
+        and (max-device-width: 1024px) 
+        and (-webkit-min-device-pixel-ratio: 1) {
+        display: none;
+      }
+    }
+  }
+
+
+  .cta {
+    display: flex;
+    
+
+    .cta-links {
+      @media (min-width: 60em) {
+        padding-left: 4.2em;
+        font-size: 1.2em;
+      }
+
+      @media only screen 
+      and (min-device-width: 768px) 
+      and (max-device-width: 1024px) 
+      and (-webkit-min-device-pixel-ratio: 1) {
+        font-size: 1.125rem;
+        padding-left: 3.2em;
+        word-spacing: .5em;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: #808080;
+      line-height: 3;
+      font-weight: 100;
+      padding-left: .65em;
+    }
+
+    a:hover {
+      color: #c0c0c0;
+    }
+
+    @media (max-width: 40em) {
+      padding-top: 3em;
+      text-align: center;
+      margin: 15px;
+    }
+
+    h2 {
+      margin: 0;
+      padding-left: 2em;
+      line-height: 1.3;
+      font-size: 2.875rem;
+      font-weight: 900;
+      max-width: 50rem;
+
+      @media (max-width: 40em) {
+        font-weight: 700;
+        font-size: 1.5rem;
+        padding: 0;
+      }
+
+      @media only screen 
+      and (min-device-width: 768px) 
+      and (max-device-width: 1024px) 
+      and (-webkit-min-device-pixel-ratio: 1) {
+        max-width: 20em;
+        font-size: 2.5em;
+        padding: 0 1.7em;
+      }
+    }
+  }
+
+
+  .anime {
+    display: block;
+    height: 400px;
+    width: 400px;
+    padding-left: 5rem;
+    margin-top: -10.5em;
+
+    animation-name: anime;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+    @keyframes anime {
+      from { transform: translate(0,  0px); }
+      65%  { transform: translate(0, 15px); }
+      to   { transform: translate(0, -0px); }    
+    }
+
+    @media screen and (max-width: 40em) {
+      display: none;
+    }
+
+    @media only screen 
+    and (min-device-width: 768px) 
+    and (max-device-width: 1024px) 
+    and (-webkit-min-device-pixel-ratio: 1) {
+    display: none;    
+    }
+  }
+}
+
+.sub-title {
+  margin-top: 20em;
+  margin-left: 5.76em;
+  margin-bottom: 3em;
+
+  h1 {
+    line-height: .1;
+  }
+
+  hr {
+    width: 4em;
+    border: solid red;
+    margin: 0;
+  }
+
+  @media (max-width: 40em) {
+    font-size: .65rem;
+    margin-left: 2.5em;
+  }
+}
+
+.portfolio {
+  
+  header {
+    width: 80%;
+    max-width: 1240px;
+    margin: 0 auto;
+  }
+
+  .container {
+    width: 86.3%;
+    max-width: 1240px;
+    margin: 0 auto;
+    
+    display: grid;
+    
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    
+  
+    @media (min-width: 60em) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  .card {
+    background: white;
+    text-decoration: none;
+    color: #444;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    
+    position: relative;
+    top: 0;
+    transition: all .1s ease-in;
+      
+    &:hover {
+      top: -2px;
+      box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+    }
+
+    article {
+      padding: 20px;
+      flex: 1;
+      
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    
+    h1 {
+      font-size: 20px;
+      margin: 0;
+      color: #333;
+    }
+    
+    p {
+      flex: 1;
+      line-height: 1.4;
+    }
+    
+    span {
+      font-size: 12px;
+      font-weight: bold;
+      color: #999;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      margin: 2em 0 0 0;
+    }
+    
+    .thumb {
+      padding-bottom: 60%;
+      background-size: cover;
+      background-position: center center;
+    }
+  } 
+}
+
+.cta-2 {
+  
+  max-width: 8em;
+  font-size: 2.3em;
+  margin-left: 0.6em;
+  line-height: 1.15;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  @media (min-width: 40em) {
+    margin-left: .55em;
+    font-size: 5em;
+  }
+
+  @media (min-width: 60em) {
+    margin-left: 1.08em;
+    font-size: 5em;
+  }
+
+  .e-txt {
+    display: inline-block;
+    position: relative;
+  }
+
+  .e-txt:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 12px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+  }
+
+  .e-txt:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+}
+
+.socials {
+  display: flex;
+  margin-left: 2.4em;
+
+  img {
+    height: 57.5px;
+    width: 60px;  
+    margin: 0 1em;
+
+    @media only screen 
+    and (min-device-width: 768px) 
+    and (max-device-width: 1024px) 
+    and (-webkit-min-device-pixel-ratio: 1) {
+      margin-left: 2.5em;
+    }  
+
+    @media (min-width: 60em) {
+      height: 78.48px;
+      width: 80.46px;
+      margin-left: 3.2em;
+      margin-top: -3em;
+    }
+
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  @media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    padding-left: 0 2em;
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+h {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+
