@@ -5,6 +5,6 @@
 
 - (https://www.beckk.netlify.app/)
 
-One more thing, the project is ever evolving with new additions made periodically. Please feel free to reach me on my  <a href="mailto:drkannobeck@gmail.com?subject=Let's Talk" target="_blank" rel="noopener noreferrer">email</a>, tell me what you think about my portfolio. It would be great get feedback from the community.
+- One more thing, the project is ever evolving with new additions made periodically. Please feel free to reach me on my  <a href="mailto:drkannobeck@gmail.com?subject=Let's Talk" target="_blank" rel="noopener noreferrer">email</a>, tell me what you think about my portfolio. It would be great get feedback from the community.
 
-Arigato
+<b>Arigato</b>
