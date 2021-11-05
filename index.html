@@ -7,6 +7,15 @@
   <title>Beck's Portfolio</title>
   <link rel="stylesheet" href="/css/style.css">
   
+  <meta name="robots" content="index,follow,noodp">
+  <!-- All Search Engines -->
+  <meta name="googlebot" content="index,follow">
+  <!-- Google Specific -->
+
+  <meta name="description" content="Beck Kanno. Developer & Designer. Website, UI/UX, 3D Graphics Design." />
+  <meta name="keywords" content="developer, designer" />
+  <meta name="author" content="Beck Kanno" />
+  
   <link rel="shortcut icon" href="/img/" type="image/x-icon">
   <link rel="icon" type="image/png" href="/img/header.png" sizes="16x16">
   <link rel="icon" type="image/png" href="/img/header.png" sizes="32x32">
@@ -196,12 +205,6 @@
       ease: Power4.easeOut,
       duration: 2
     }, "-=1.5")
-    tl.from('.pattern', {
-      opacity: 0,
-      y:50,
-      ease: Power4.easeOut,
-      duration: 1
-    }, "-=2")
 
     gsap.from(".transition", {
       scrollTrigger: {
@@ -221,8 +224,8 @@
       },
       y: 50,
       opacity: 0,
-      duration: 1.8,
-      stagger: 1.2
+      duration: 1.1,
+      stagger: 0.8
     })
 
   </script>
