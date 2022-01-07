@@ -1,7 +1,7 @@
 # Beck's Portfolio
 <h3 align="center">My Personal Portfolio</h3>
 
-- 🔭 Hi, I’m currently working on my personal portfolio that I can share when searching for work opportunities. I am a frontend developer with a UX/UI Design background, so I want my portfolio to showcase that, in addition to my works. I am making use of SCSS and light javascript(ing). You can find the project in the link below.
+- 🔭 Hi, I’m currently working on version 1 of my personal portfolio that I can share when searching for work opportunities. I am a UX/UI Designer so I want my portfolio to showcase my best works so far in addition to my frontend skills. I am making use of SCSS and light javascript(ing). You can find the project in the link below.
 
 - (https://www.beckk.netlify.app/)
 
